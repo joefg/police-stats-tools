@@ -1,3 +1,4 @@
 [
-    "importers/pfas-2021.sh"
+    "importers/pfas-2021.sh",
+    "importers/crime-stats-all.sh"
 ]
