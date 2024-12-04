@@ -91,6 +91,7 @@ sql = {
                 outcome_type text
             );
             SELECT AddGeometryColumn('{force}_outcomes', 'geom', 4326, 'POINT', 'XY', 0);
+            SELECT CreateSpatialIndex('{force}_outcomes', 'geom');
         ''',
         'INSERT': '''
             INSERT INTO {force}_outcomes (
@@ -133,6 +134,8 @@ sql = {
             outcome_linked_to_object_of_search bool
         );
         SELECT AddGeometryColumn('{force}_stop_search', 'geom', 4326, 'POINT', 'XY', 0);
+        SELECT CreateSpatialIndex('{force}_stop_search', 'geom');
+
         ''',
         'INSERT': '''
             INSERT INTO {force}_stop_search (
@@ -182,6 +185,7 @@ sql = {
                 context text
             );
             SELECT AddGeometryColumn('{force}_street', 'geom', 4326, 'POINT');
+            SELECT CreateSpatialIndex('{force}_street', 'geom');
         ''',
         'INSERT': '''
             INSERT INTO {force}_street (
