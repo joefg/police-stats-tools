@@ -55,20 +55,19 @@ def snake_case(string):
         lambda mo: ' ' + mo.group(0).lower(), string)).split()
     )
 
-#PFAS = (
-#    'avon-and-somerset', 'bedfordshire', 'btp', 'cambridgeshire',
-#    'cheshire', 'city-of-london', 'cleveland', 'cumbria',
-#    'derbyshire', 'devon-and-cornwall', 'dorset', 'durham',
-#    'dyfed-powys', 'essex', 'gloucestershire', 'gwent',
-#    'hampshire', 'hertfordshire', 'kent', 'lancashire',
-#    'leicestershire', 'lincolnshire', 'merseyside', 'metropolitan',
-#    'norfolk', 'northamptonshire', 'northumbria', 'north-wales',
-#    'north-yorkshire', 'nottinghamshire', 'south-wales', 'south-yorkshire',
-#    'staffordshire', 'suffolk', 'surrey', 'sussex', 'thames-valley',
-#    'warwickshire', 'west-mercia', 'west-midlands', 'west-yorkshire',
-#    'wiltshire'
-#)
-PFAS = ('metropolitan',)
+PFAS = (
+    'avon-and-somerset', 'bedfordshire', 'btp', 'cambridgeshire',
+    'cheshire', 'city-of-london', 'cleveland', 'cumbria',
+    'derbyshire', 'devon-and-cornwall', 'dorset', 'durham',
+    'dyfed-powys', 'essex', 'gloucestershire', 'gwent',
+    'hampshire', 'hertfordshire', 'kent', 'lancashire',
+    'leicestershire', 'lincolnshire', 'merseyside', 'metropolitan',
+    'norfolk', 'northamptonshire', 'northumbria', 'north-wales',
+    'north-yorkshire', 'nottinghamshire', 'south-wales', 'south-yorkshire',
+    'staffordshire', 'suffolk', 'surrey', 'sussex', 'thames-valley',
+    'warwickshire', 'west-mercia', 'west-midlands', 'west-yorkshire',
+    'wiltshire'
+)
 
 PERIODS = (
     '2024-10', '2024-09', '2024-08', '2024-07', '2024-06',
