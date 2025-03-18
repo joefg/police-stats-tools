@@ -70,8 +70,8 @@ PFAS = (
 )
 
 PERIODS = (
-    '2024-10', '2024-09', '2024-08', '2024-07', '2024-06',
-    '2024-05', '2024-04'
+    '2025-01', '2024-12', '2024-11', '2024-10',
+    '2024-09', '2024-08', '2024-07'
 )
 
 SOURCES = ('outcomes', 'stop-and-search', 'street')
@@ -221,7 +221,7 @@ sql = {
     
 def extract_files():
     if not os.path.isdir('build/crime-data/'):
-        with ZipFile('./downloads/2024-10.zip') as z:
+        with ZipFile('./downloads/2025-01.zip') as z:
             z.extractall('build/crime-data/')
         logging.info('Crime data extracted to build/crime-data')
     else:

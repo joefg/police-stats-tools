@@ -5,7 +5,14 @@ Data and sources.
 | Name | Description | Format | License | Link |
 | ---- | ----------- | ------ | ------- | ---- |
 | Force Boundaries | Police Force Area (2021) BGC | Shapefile | OGLV3 | <https://geoportal.statistics.gov.uk/datasets/95df57f20578482586e79f87478b01e9_0/explore> |
-| Crime, Outcome, Stop and Search data | Archive (October 2024) | ZIP file containing CSVs | OGLV3 | <https://data.police.uk/data/archive/2024-10.zip>
+| Crime, Outcome, Stop and Search data | Archive (January 2025) | ZIP file containing CSVs | OGLV3 | <https://data.police.uk/data/archive/2025-01.zip>
+
+## Notes
+
+- The Crime, Outcome, Stop and Search dataset is published monthly on a
+three-month lag.
+
+- Known issues: <https://data.police.uk/changelog/>
 
 ## Licensing
 
