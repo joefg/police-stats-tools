@@ -10,7 +10,7 @@ Requires:
 
 - [Spatialite](https://www.gaia-gis.it/fossil/libspatialite/index)
 - [jq](https://jqlang.github.io/jq/)
-- Python and [Pipenv](https://pipenv.pypa.io/en/latest/)
+- Python and [uv](https://docs.astral.sh/uv/)
 
 Make sure these are installed and working before using these tools.
 
