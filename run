@@ -17,24 +17,24 @@ EOF
 }
 
 function run_restore(){
-	pipenv install --dev
+	uv sync
 }
 
 function run_dev(){
-	pipenv run jupyter lab
+	uv run jupyter lab
 }
 
 function run_lint(){
-	pipenv run mypy "$THISDIR"/police_stats_tools/
-	pipenv run pylint "$THISDIR"/police_stats_tools/
+	uv run mypy "$THISDIR"/police_stats_tools/
+	uv run pylint "$THISDIR"/police_stats_tools/
 }
 
 function run_unit(){
-	pipenv run pytest
+	uv run pytest
 }
 
 function main(){
-cmd=${1-default}
+	cmd=${1-default}
 	shift || true
 	case "$cmd" in
 		help)
@@ -59,4 +59,3 @@ cmd=${1-default}
 }
 
 main "$@"
-
